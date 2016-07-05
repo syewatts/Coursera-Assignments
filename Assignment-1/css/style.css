@@ -1,13 +1,56 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Colibri", Georgia, Serif;
+  font-size: 16px;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  border: 1px solid black;
+  margin: -1px -1px auto auto;
+  padding: 3px;
+  width: 50%;
+  text-align: center;
+}
+p {
+  padding: 4px;
+  margin: 0px;
+}
+.thing1 {
+  background-color: cyan;
+}
+.thing2 {
+  background-color: pink;
+}
+.thing3{
+  background-color: yellow;
+}
+.row div{
+  background-color: orange;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
 
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
+
   }
   .col-lg-1 {
     width: 8.33%;
@@ -19,7 +62,9 @@
     width: 25%;
   }
   .col-lg-4 {
-    width: 33.33%;
+    width: 30%;
+    margin-left: 1.66%;
+    margin-right: 1.66%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -51,7 +96,6 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -69,7 +113,9 @@
     width: 41.66%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%
   }
   .col-md-7 {
     width: 58.33%;
@@ -87,6 +133,9 @@
     width: 91.66%;
   }
   .col-md-12 {
-    width: 100%;
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left: 2.5%
+
   }
 }
